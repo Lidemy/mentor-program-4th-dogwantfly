@@ -8,6 +8,8 @@ Git 就像菜哥說的可以拿來做版本控制，他的基本概念，可以�
 #### git init
 接下來，要把 git 加進你的笑話紀錄資料夾中才開始在這個資料夾管理笑話，把 git 加進要做版本控制的資料夾的指令是：`git init` ，初始化 git
 
+補充：`git init` 時會把整個檔案都記起來，之後如果修改， git 都是記住修改的部分
+
 #### git add
 然後這樣就可以開始版本控制了嗎？還沒，剛剛的 `git init` 指令只是讓這個資料夾可以開始使用 git ，要讓這個資料夾加入版本控制還要使用 `git add (後面接要加入版本控制的檔案)`，也可以使用 `git add .`，把該資料夾中的全部檔案都加入版本控制
 
@@ -17,7 +19,7 @@ Git 就像菜哥說的可以拿來做版本控制，他的基本概念，可以�
 
 如果想一次把檔案加入版本控制並存到最新版的改動，也可以使用指令`git commit -am 'joke'`，指令中的 `-a`就是 add 的意思，會直接執行 git add 和 git commit 兩個動作
 
-補充一下如果 git commit的時候出現錯誤，跳出了一個要你設定帳號跟姓名的畫面，請輸入以下指令
+補充一下如果 git commit 的時候出現錯誤，跳出了一個要你設定帳號跟姓名的畫面，請輸入以下指令
 ```
 （記得把名字跟 email 換成你自己的）
 
@@ -91,7 +93,9 @@ f041daf first commit
 不知道菜哥會不會想要把自己的笑話進化史傳到網路上管理，這樣之後用其他電腦也可以繼續編輯自己的笑話！這邊介紹一個可以放自己的 git repository 的地方：github，補充介紹 repository 是什麼，其實就是菜哥的笑話資料夾加入 git 之後，這個資料夾就算是一個儲存庫（repository)，github 就是集中 git repository 的地方，就像我們會把檔案丟到雲端一樣，我們也可以把檔案丟到 github ，還可以做版本控制
 
 #### git remote add
-要怎麼把菜哥的笑話資料夾從菜哥的電腦丟到 github 呢，首先要先到 github 建立一個新的 repository ，當作放這個笑話紀錄的地方，在建立新的 repository 後，因為這個 repository 係在沒有任何內容，要從菜哥的電腦把這個資料夾放上去，回到 command line 使用指令`git remote add origin https://github.com/tsaibrother/joke.git`，git remote add 就是把遠端(github)上的 repository 加入版本控制的意思，後面那轉串網址則是在剛剛建立空的 repository 時，可以到說明中複製或是到 repository 頁面點選綠色的 clone 按鈕也可以看到這個網址，origin 是一個代號，也可以改成其他名稱
+要怎麼把菜哥的笑話資料夾從菜哥的電腦丟到 github 呢，首先要先到 github 建立一個新的 repository ，當作放這個笑話紀錄的地方，在建立新的 repository 後，因為這個 repository 現在沒有任何內容，要從菜哥的電腦把這個資料夾放上去，回到 command line 使用指令`git remote add origin https://github.com/tsaibrother/joke.git`
+
+git remote 指令是和遠端有關的操作，add 就是把後面的 repo 網址加入本地(local)，後面那轉串 repo 網址則是在剛剛建立空的 repository 時，可以到說明中複製或是到 repository 頁面點選綠色的 clone 按鈕也可以看到這個網址，origin 是一個代號代表後面的 repo 網址，也可以改成其他名稱，預設會是 origin
 
 #### git push
 在 `git remote add`後，接著就是`git push origin master` 把在菜哥電腦中（本地）的笑話資料夾，推到遠端的 origin 代號的 master （分支），沒有講解到 branch (分支) ，這邊先說一下再檔案加入 git 一開始都只會有一個預設分支，就是 master，因此 `git push origin master`這個指令就是把菜哥的笑話文字記錄都放上去遠端的 github

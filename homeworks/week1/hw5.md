@@ -7,8 +7,26 @@
 
 前端就是處理瀏覽器到運作系統到硬體（網路卡）發送 request 給 server 以及硬體（網路卡）收到 server 的 response 到運作系統到瀏覽器後將資訊解析成畫面這段過程，後端則是處理 server 和 database 的溝通，以及 server 回傳 response 給瀏覽器這段
 
+（以下是參考[作業範例](https://github.com/Lidemy/mentor-program-4th/blob/master/examples/week1/hw5.md)改寫）
+
+以購物結帳畫面為例：
+
+購物結帳的介面會是前端，
+
+填寫購物的付款方式、運送方式等等是前端，
+
+要購買的商品資料、填寫的付款方式、運送這些資料由前端傳到後端，
+
+後端將這些資料儲存到資料庫，
+
+回傳 response 給前端
+
+
 ## 假設我今天去 Google 首頁搜尋框打上：JavaScript 並且按下 Enter，請說出從這一刻開始到我看到搜尋結果為止發生在背後的事情。
-從 google 瀏覽器到運作系統到硬體（網路卡）先向 DNS 伺服器取得 IP 位址，再向此 IP 的 server 發送 javascript 關鍵字 request 給 server ，server 從資料庫用搜尋演算法找到與 javascript 相關性高的資料，將這些資料回傳給 server ，server 處理這些資料後再回傳 response 給電腦/手機硬體（網路卡）到運作系統到 google 瀏覽器，瀏覽器將資訊解析成畫面，看到搜尋結果
+1. 從 google 瀏覽器到運作系統到硬體（網路卡）先向 DNS 伺服器取得 IP 位址
+2. 再向此 IP 的 server 發送 javascript 關鍵字 request 給 server
+3. server 從資料庫用搜尋演算法找到與 javascript 相關性高的資料，將這些資料回傳給 server
+4. server 處理這些資料後再回傳 response 給電腦/手機硬體（網路卡）到運作系統到 google 瀏覽器，瀏覽器將資訊解析成畫面，看到搜尋結果
 
 
 ## 請列舉出 3 個「課程沒有提到」的 command line 指令並且說明功用
