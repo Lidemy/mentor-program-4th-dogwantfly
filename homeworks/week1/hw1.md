@@ -16,9 +16,11 @@ git checkout week1
 6. 按送出交出作業，送出後會在作業區看到自己的作業，點擊週次就可以連到自己的 pull request 畫面
 
 ### 被 merge 後
-* 先切換到 master branch `git checkout master`，`git pull origin master`，下載遠端最新版本的作業，最後記得把之前在本地的 week1（做作業時的 branch) 刪除，`git branch -d week1`
+* 先切換到 master branch `git checkout master`，`git pull origin master`，下載遠端最新版本的作業，最後記得：如果沒有要再修改，就可把之前在本地的 week1（做作業時的 branch) 刪除，`git branch -d week1`
 
 ### 要再次開始做作業時
-新增新的 branch，可以輸入`git checkout -b week1-第一次修改`，直接新增 branch 並切換到該 branch
+如果想要再修改，而本地的 week1 分支還沒刪除，可以直接修改後 commit，最後 push 上去 github
+
+如果已經刪掉之前的 week1 分支，記得要再次新增新的 branch，可以輸入`git checkout -b week1-第一次修改`，直接新增 branch 並切換到該 branch
 
 
