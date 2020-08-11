@@ -1,16 +1,7 @@
 function capitalize(str) {
-    let ans = ''
-    if (str[0] >= 'a' && str[0] <= 'z'){
-        ans += String.fromCharCode(str.charCodeAt(0) - 32);
-    }else{
-      ans+=str[0]
-    }
-    for(let i=1; i<str.length; i++){
-      ans+=str[i]
-    }
-    return ans
+    return str[0].toUpperCase() + str.slice(1); 
 }
-
+//將第一個字母轉成大寫（若本來就是大寫使用 toUppercase() 也會是大寫），再用 slice() 加上第二個字母後的部分
 console.log(capitalize('hello'));
 console.log(capitalize('nick'));
 console.log(capitalize('Nick'));
