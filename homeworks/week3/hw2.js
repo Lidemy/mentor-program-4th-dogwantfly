@@ -2,8 +2,8 @@
 function digitsCount(n) {
   if (n === 0) return 1;
   let result = 0;
-  while (n !== 0) {
-    let m = n;
+  let m = n;
+  while (m !== 0) {
     m = Math.floor(m / 10);
     result += 1;
   }
