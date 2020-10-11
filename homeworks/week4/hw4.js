@@ -9,11 +9,21 @@ request(
     },
   },
   (error, response, body) => {
-    const json = JSON.parse(body);
-    for (let i = 0; i < json.top.length; i += 1) {
+    if (error) {
+      return console.log(error);
+    }
+    let data;
+    try {
+      data = JSON.parse(body);
+    } catch (err) {
+      console.log(err);
+      return err;
+    }
+    for (let i = 0; i < data.top.length; i += 1) {
       console.log(
-        `${json.top[i].viewers}  ${json.top[i].game.name}`,
+        `${data.top[i].viewers}  ${data.top[i].game.name}`,
       );
     }
+    return data;
   },
 );
