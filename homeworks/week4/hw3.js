@@ -1,13 +1,13 @@
 const request = require('request');
 const process = require('process');
 
-const noName = () => {
+const askCountryName = () => {
   if (!process.argv[2]) {
     return console.log('請輸入國家名稱');
   }
   return '請輸入國家名稱';
 };
-noName();
+askCountryName();
 request(
   `https://restcountries.eu/rest/v2/name/${process.argv[2]}`,
   (error, response, body) => {
