@@ -3,6 +3,7 @@ const process = require('process');
 
 const action = process.argv[2];
 const params = process.argv[3];
+const newBookName = process.argv[4];
 
 const listBooks = () => {
   request(
@@ -120,7 +121,7 @@ switch (action) {
     createBook(params);
     break;
   case 'update':
-    updateBook(params, process.argv[4]);
+    updateBook(params, newBookName);
     break;
   default:
     console.log('Available commands: list, read, delete, create and update');

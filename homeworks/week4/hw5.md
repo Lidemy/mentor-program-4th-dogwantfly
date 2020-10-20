@@ -5,7 +5,7 @@ API 全名為 Application Programming Interface，應用程式介面，在本質
 
 使用 API 交換資料有幾個特點：
 - 提供資料（或功能）者可以決定自己要提供的東西，像是販賣機可以販賣自己想販賣的東西，因為是機器，因此也無法像服務人員一樣，可以要求一些客製化的東西，賣飲料就只能提供單純的飲料，無法像手搖飲一樣要求糖和冰的量，因此提供者可以決定自己要提供什麼樣的資料，以及不提供什麼資料
-- 交換資料可粗略分成不透過網路與透過網路，目前較常碰到的是透過網路使用的 API，稱為 Web API 或 HTTP API，因大多數透過網路的 API 是使用 HTTP 的方式（透過發 request 和接收 response 的動作） 來交換資料；不是透過網路的 API，例如作業系統的 API，我們都透過此 API 來讀取或存取檔案
+- 交換資料可粗略分成不透過網路與透過網路，目前較常碰到的是透過網路使用的 API，有 Web API 或 HTTP API，其中 Web API 除了指的是需要有網路環境，也可能指的是 JavaScript 在 web 環境中才能使用的一些功能 [Web API](https://developer.mozilla.org/zh-TW/docs/Web/API)，又因大多數透過網路的 API 是使用 HTTP 的方式（透過發 request 和接收 response 的動作） 來交換資料，因此使用 HTTP 協定互相傳送資料的 API 可以稱為 HTTP API；不是透過網路的 API，例如作業系統的 API，我們都透過此 API 來讀取或存取檔案
 - 使用 API 拿取資料，可以看著 API 文件獨立完成串接，不需太多人力，減少一些溝通障礙，不過前提是 API 文件內容說明完整
 
 
