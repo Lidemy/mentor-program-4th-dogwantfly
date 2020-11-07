@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container bg-color">
+            <!-- form -->
+            <form action="form.html" class="form bg-light">
+                <h1 class="text-lg">新拖延運動報名表單</h1>
+                <ul>
+                    <li>活動日期：2020/12/10 ~ 2020/12/11</li>
+                    <li>活動地點：台北市大安區新生南路二段1號</li>
+                </ul>
+                <span class="required color-required">*必填</span>
+                <!-- 暱稱 -->
+                <label for="nickname" class="fz-md mb-20 d-block required-input">暱稱</label>
+                <input id="nickname"type="text" class="border-input w-50 p-5 mb-48 w-sm-100 p-sm-10" placeholder="您的回答">
+                <!-- 電子郵件 -->
+                <label for="email" class="fz-md mb-20 d-block required-input">電子郵件</label>
+                <input id="email" type="email" class="border-input w-50 p-5 mb-48 w-sm-100 p-sm-10" placeholder="您的電子郵件">
+                <!-- 手機號碼 -->
+                <label for="phone" class="fz-md mb-20 d-block required-input">手機號碼</label>
+                <input id="phone" type="tel" class="border-input w-50 p-5 mb-48 w-sm-100 p-sm-10" placeholder="您的手機號碼">
+                <!-- 報名類型 -->
+                <label class="fz-md mb-20 d-block required-input">報名類型</label>
+                <label class="input-group fz-sm" for="inBed">
+                    <input type="radio" class="radio" name="sign-up" id="inBed">
+                    <span class="checkmark"></span>
+                    躺在床上用想像力實作
+                </label>
+                <label class="input-group fz-sm" for="usePhone">
+                    <input type="radio" class="radio" name="sign-up" id="usePhone">
+                    <span class="checkmark"></span>
+                    趴在地上滑手機找現成的
+                </label>
+                <!-- 如何得知活動 -->
+                <label for="activitySource" class="fz-md mb-20 d-block required-input">怎麼知道這個活動的？</label>
+                <input id="activitySource" type="text" class="border-input w-50 p-5 mb-48 w-sm-100 p-sm-10" placeholder="您的回答">
+                <!-- 其他 -->
+                <label for="other" class="other fz-md d-block">其他</label>
+                <p class="comment">對活動的一些建議</p>
+                <input id="other" type="text" class="border-input comment-input w-50 p-5 w-sm-100 p-sm-10" placeholder="您的回答">
+                <!-- 提交 -->
+                <input type="submit" value="提交" class="submit mb-20">
+                <p class="fz-sm">請勿透過表單送出您的密碼。</p>
+            </form>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <p>© 2020 © Copyright. All rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
