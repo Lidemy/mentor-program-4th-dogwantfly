@@ -48,6 +48,7 @@ h1{
 .required{
     display: block;
     margin-bottom: 55px;
+    color: #e74149;
 }
 .required-input::after{
     content: '*';
