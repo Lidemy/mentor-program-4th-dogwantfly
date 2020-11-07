@@ -73,9 +73,9 @@ margin 需注意 margin-collapse 的情況，當區塊元素是由上而下排�
 
 ## 請問 display: inline, block 跟 inline-block 的差別是什麼？
 
-區塊元素和行內元素，區塊元素會自動換行、可以調整寬高、padding 和 margin，例如 div、p
+區塊元素和行內元素，區塊元素會占滿整行並自動換行、可以調整寬高、padding 和 margin，例如 div、p
 
-行內元素不能調整寬高和上下 margin、可以調整左右 margin 和 padding，但不會影響到其他相鄰元素的位置，調整 padding 時文字內容的位置也不會改變，例如 a、span
+行內元素不會佔滿整行，內容有多少就有多少寬高，不能調整寬高和上下 margin、可以調整左右 margin 和 padding，但不會影響到其他相鄰元素的位置，調整 padding 時文字內容的位置也不會改變，例如 a、span
 
 如果是 display: inline-block，不會自動換行，但是可以調整寬高、padding 和 margin，例如 img，但是需注意 inline-block 元素空間的下方會有 2 -3px 的留白，因 inline-block 會在文字基線下方預留空間顯示英文字母（像是 g、j 等等）或其他西方文字，可以設定 vertical-align 消除下方留白或將 display 設定成 block
 
