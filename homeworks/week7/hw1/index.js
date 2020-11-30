@@ -48,7 +48,6 @@ document
       }
     }
     // 是否有錯誤
-    console.log(hasError);
     if (!hasError) {
       /* eslint-disable no-alert, no-console */
       alert(`
