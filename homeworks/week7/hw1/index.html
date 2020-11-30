@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container bg-color">
+            <!-- form -->
+            <form action="form.html" class="form bg-light">
+                <h1 class="text-lg">新拖延運動報名表單</h1>
+                <ul>
+                    <li>活動日期：2020/12/10 ~ 2020/12/11</li>
+                    <li>活動地點：台北市大安區新生南路二段1號</li>
+                </ul>
+                <div class="required-text">* 必填</div>
+                <!-- 暱稱 -->
+                <div class="required mb-48">
+                    <label for="nickname" class="fz-md mb-20 d-block">暱稱</label>
+                    <input id="nickname" name="nickname" type="text" class="border-input w-50 p-5 w-sm-100 p-sm-10" placeholder="您的回答">
+                    <div class="error fz-sm">請填寫暱稱</div>
+                </div>
+                <!-- 電子郵件 -->
+                <div class="required mb-48">
+                    <label for="email" class="fz-md mb-20 d-block">電子郵件</label>
+                    <input id="email" name="email" type="email" class="border-input w-50 p-5 w-sm-100 p-sm-10" placeholder="您的電子郵件">
+                    <div class="error fz-sm">請填寫電子郵件</div>
+                </div>
+                <!-- 手機號碼 -->
+                <div class="required mb-48">
+                    <label for="phone" class="fz-md mb-20 d-block">手機號碼</label>
+                    <input id="phone" name="phone" type="tel" class="border-input w-50 p-5 w-sm-100 p-sm-10" placeholder="您的手機號碼">
+                    <div class="error fz-sm">請填寫手機號碼</div>
+                </div>
+                <!-- 報名類型 -->
+                <div class="required-radio mb-48">
+                    <label class="fz-md mb-20 d-block">報名類型</label>
+                    <label class="input-group fz-sm" for="inBed">
+                        <input type="radio" class="radio" name="sign-up" id="inBed" value="躺在床上用想像力實作">
+                        <span class="checkmark"></span>
+                        躺在床上用想像力實作
+                    </label>
+                    <label class="input-group fz-sm" for="usePhone">
+                        <input type="radio" class="radio" name="sign-up" id="usePhone" value="趴在地上滑手機找現成的">
+                        <span class="checkmark"></span>
+                        趴在地上滑手機找現成的
+                    </label>
+                    <div class="error fz-sm">請選擇報名類型</div>
+                </div>
+                <!-- 如何得知活動 -->
+                <div class="required mb-48">
+                    <label for="activitySource" class="fz-md mb-20 d-block">怎麼知道這個活動的？</label>
+                    <input id="activitySource" name="activitySource" type="text" class="border-input w-50 p-5 w-sm-100 p-sm-10" placeholder="您的回答">
+                    <div class="error fz-sm">請填寫此題</div>
+                </div>
+                <!-- 其他 -->
+                <label for="other" class="other fz-md d-block">其他</label>
+                <p class="comment">對活動的一些建議</p>
+                <input id="other" name="other" type="text" class="border-input comment-input w-50 p-5 w-sm-100 p-sm-10" placeholder="您的回答">
+                <!-- 提交 -->
+                <input type="submit" value="提交" class="submit mb-20">
+                <p class="fz-sm">請勿透過表單送出您的密碼。</p>
+            </form>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <p>© 2020 © Copyright. All rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
