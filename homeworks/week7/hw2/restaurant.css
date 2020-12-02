@@ -1,0 +1,254 @@
+/* ------- */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Questrial","MicrosoftJhengHei" , sans-serif;
+    line-height: normal;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* -------- */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.logo,.footer .logo{
+    display: block;
+    color: #489846;
+    font-size: 36px;
+}
+.text-lg{
+    font-size: 36px;
+    font-weight: bold;
+}
+.title{
+    display: inline-block;
+    vertical-align: text-top;
+    padding-left: 17px;
+    border-left: 15px solid #a3dea2;
+}
+@media (max-width: 375px){
+    .text-lg{
+        font-size: 32px;
+    }
+}
+/* header */
+.header{
+    margin-bottom: 80px;
+}
+.navbar{
+    padding: 20px;
+    padding-left: 96px;
+    padding-right: 121px;
+    box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+}
+.navbar .container{
+    max-width: 100%;
+}
+
+.navbar-links li{
+    margin-right: 12px;
+    text-align: center;
+}
+.navbar-links li:last-child{
+    margin-right: 0;
+}
+.navbar-links a{
+    color: #000;
+    padding: 14px 25px;
+    border-radius: 8px;
+    display: block;
+    transition: all 0.3s;
+}
+.navbar-links a.active,.navbar-links a:hover{
+    background-color: #ff7286;
+    color: #fff;
+}
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('./img/2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+}
+.banner-title{
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+}
+@media (max-width: 992px){
+    h1{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px){
+    .navbar{
+        padding: 20px 0;
+    }
+    .container{
+        max-width: 720px;
+   }
+}
+@media (max-width: 576px){
+   .navbar-links{
+       width: 80%;
+       justify-content: space-between;
+    }
+   .navbar-links li{
+        width: 48%;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+}
+@media (max-width: 414px){
+    .navbar-links li{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 48px;
+    }
+}
+/* faq */
+.faq{
+    min-height: calc(100vh - 455px);
+    padding-bottom: 40px;
+}
+.faq.container{
+    max-width: 810px;
+    margin: 0 auto;
+}
+.faq .title{
+    margin-bottom: 60px;
+}
+.card{
+    text-align: left;
+}
+.card-title{
+    font-size: 18px;
+    line-height: 33px;
+}
+.card-collapse{
+    padding: 24px 0;
+}
+.card-body{
+    height: 0;
+    transition: all 0.5s;
+    overflow: hidden;
+    border-bottom: 1px solid #a6e2c0;
+}
+.card-text{
+    padding-left: 68px;
+    padding-bottom: 45px;
+}
+.show .card-body{
+    height: 100px;
+}
+
+.marker{
+    color: #70b282;
+    font-size: 24px;
+    margin-right: 16px;
+}
+@media (max-width: 992px){
+    .faq.container{
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px){
+    .faq{
+        min-height: auto;
+    }
+    .show .card-body{
+        height: 200px;
+    }
+}
+@media (max-width: 576px){
+    .faq.container{
+        max-width: 540px;
+    }
+}
+/* footer */
+.footer{
+    padding-top: 35px;
+    background-color: #e8efee;
+    line-height: 1.5;
+}
+.footer-info{
+    font-size: 14px;
+    color: #484848;
+    padding-bottom: 40px;
+}
+.footer-info h2{
+    margin-bottom: 20px;
+}
+.footer-info li:not(:last-child){
+    margin-bottom: 16px;
+}
+.footer-info a{
+    color: #484848;
+}
+.footer-info a:hover{
+    color: #35564b;
+}
+.footer .logo{
+    text-align: right;
+}
+.footer-link::before{
+    content:'/';
+    display: inline-block;
+    margin: 0 5px;
+}
+.footer-copyright{
+    padding: 15px 0;
+    background-color: #35564b;
+    color: #fff;
+}
+@media (max-width: 768px){
+    .footer-info{
+        flex-direction: column-reverse;
+    }
+    .footer .logo{
+        text-align: left;
+    }
+}
+
+/* util */
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+@media (max-width: 992px){
+    .flex-lg-column {
+        flex-direction: column;
+    }
+    .align-items-lg-center{
+        align-items: center;
+    }
+}
+@media (max-width: 576px){
+    .flex-sm-wrap{
+        flex-wrap: wrap;
+    }
+}
