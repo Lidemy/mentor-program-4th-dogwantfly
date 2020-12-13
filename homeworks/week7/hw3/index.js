@@ -1,7 +1,7 @@
 // 新增代辦事項
 document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault();
-  const { value } = document.querySelector('.input').value;
+  const { value } = document.querySelector('.input');
   if (!value) {
     return;
   }
