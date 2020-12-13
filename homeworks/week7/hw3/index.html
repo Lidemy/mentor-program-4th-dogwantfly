@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="todo-list.css">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center">
+        <!-- header -->
+        <header class="header">
+            <h1 class="title">Todo List</h1>
+        </header>
+        <main class="todo">
+            <form action="">
+                <input type="text" placeholder="Add something to do here..." class="input">
+                <ul class="list">
+                    <li class="list-item d-flex justify-content-between align-items-center">
+                        <div class="input-group">
+                            <input type="checkbox" name="todo">
+                            <label>
+                                Hit the gym
+                            </label>
+                        </div>
+                        <a href="#" class="remove-btn">
+                            <img src="./close-24px.svg" alt="close icon">
+                        </a>
+                    </li>
+                </ul>
+            </form>
+        </main>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
