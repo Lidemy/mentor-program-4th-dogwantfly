@@ -4,8 +4,8 @@ function escapeHtml(unsafe) {
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
-    .replace(/'/g, '&quot;')
-    .replace(/'/g, '&#039;');
+    .replace(/"/g, '&quot;')
+    .replace(/"/g, '&#039;');
 }
 // 新增代辦事項
 document.querySelector('form').addEventListener('submit', (e) => {
