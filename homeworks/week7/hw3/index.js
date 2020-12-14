@@ -1,3 +1,12 @@
+// value 跳脫字元
+function escapeHtml(unsafe) {
+  return unsafe
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/'/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
 // 新增代辦事項
 document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault();
@@ -10,7 +19,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
   todo.innerHTML = `
     <div class="input-group">
         <input type="checkbox" name="todo">
-        <label>${value}</label>
+        <label>${escapeHtml(value)}</label>
     </div>
     <a href="#" class="remove-btn">
         <img src="./close-24px.svg" alt="close icon">
@@ -25,6 +34,7 @@ document.querySelector('.list').addEventListener('click', (e) => {
   // 刪除
   if (e.target.parentNode.classList.contains('remove-btn')) {
     e.target.parentNode.parentNode.remove();
+    return;
   }
   // 標記完成或未完成
   if (e.target.checked) {
