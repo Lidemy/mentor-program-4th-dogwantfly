@@ -36,11 +36,7 @@ img{
     padding-left: 17px;
     border-left: 15px solid #a3dea2;
 }
-@media (max-width: 375px){
-    .text-lg{
-        font-size: 32px;
-    }
-}
+
 /* header */
 .header{
     margin-bottom: 80px;
@@ -108,14 +104,7 @@ img{
         margin-bottom: 12px;
     }
 }
-@media (max-width: 414px){
-    .navbar-links li{
-        width: 100%;
-    }
-    .banner-title{
-        font-size: 48px;
-    }
-}
+
 /* faq */
 .faq{
     min-height: calc(100vh - 455px);

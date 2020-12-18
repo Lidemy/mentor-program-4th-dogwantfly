@@ -9,7 +9,7 @@ DOM 的全名是  Document Object Modal，是一個將 HTML 結構（Document）
 
 ### 事件傳遞的順序：
 
-事件會先由 DOM 的最上層：瀏覽器視窗 window 往下傳到 html、body，再依照元素的階層往下傳遞到最後的目標元素，到目標元素後，又會往上回傳到 window
+事件會先由 DOM 的最上層：瀏覽器視窗 window 往下傳到 document、html、body，再依照元素的階層往下傳遞到最後的目標元素，到目標元素後，又會往上回傳到 window
 
 例如：
 
@@ -23,7 +23,7 @@ DOM 的全名是  Document Object Modal，是一個將 HTML 結構（Document）
 </div>
 
 ```
-當按下 click me，點擊事件傳遞順序就會是 window -> html -> body -> .outer-box -> .inner-box -> .btn，再從 .btn 傳回 window
+當按下 click me，點擊事件傳遞順序就會是 window -> document -> html -> body -> .outer-box -> .inner-box -> .btn，再從 .btn 傳回 window
 
 ### 什麼是冒泡，什麼又是捕獲？
 
